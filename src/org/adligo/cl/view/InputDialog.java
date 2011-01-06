@@ -1,10 +1,15 @@
 package org.adligo.cl.view;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import org.adligo.cl.CL_InvokerNames;
+import org.adligo.i.adi.client.InvokerNames;
+import org.adligo.i.adig.client.GRegistry;
+import org.adligo.i.adig.client.I_GInvoker;
 
 public class InputDialog {
+	private static I_GInvoker<String, Object> SYSTEM_OUT = GRegistry.getInvoker(
+			InvokerNames.OUT, String.class, Object.class);
+	private static I_GInvoker<Object, String> CONSOLE_INPUT_READER = GRegistry.getInvoker(
+			CL_InvokerNames.CONSOLE_INPUT_READER, Object.class, String.class);
 	private String message;
 	private String input;
 	
@@ -25,13 +30,7 @@ public class InputDialog {
 	}
 
 	public void show() {
-		System.out.println(message);
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-	    try {
-	         input = br.readLine();
-	    } catch (IOException ioe) {
-	        //do nothing
-	    }
+		SYSTEM_OUT.invoke(message);
+		input = CONSOLE_INPUT_READER.invoke(null);
 	}
 }
