@@ -3,8 +3,8 @@ package org.adligo.cl.args;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.adligo.i.log.client.Log;
-import org.adligo.i.log.client.LogFactory;
+import org.adligo.i.log.shared.Log;
+import org.adligo.i.log.shared.LogFactory;
 
 public class ArgParser {
 	private static final Log log = LogFactory.getLog(ArgParser.class);
