@@ -1,7 +1,7 @@
 package org.adligo.cl;
 
-import org.adligo.i.adig.client.BaseGInvoker;
-import org.adligo.i.adig.client.I_GInvoker;
+import org.adligo.i.adig.shared.BaseGInvoker;
+import org.adligo.i.adig.shared.I_GInvoker;
 
 /**
  * accepts a integer for the System.exit call

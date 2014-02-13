@@ -1,6 +1,6 @@
 package org.adligo.cl;
 
-import org.adligo.i.adig.client.GRegistry;
+import org.adligo.i.adig.shared.GRegistry;
 
 public class CLRegistry {
 

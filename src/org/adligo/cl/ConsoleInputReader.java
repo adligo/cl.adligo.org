@@ -4,8 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import org.adligo.i.adig.client.BaseGInvoker;
-import org.adligo.i.adig.client.I_GInvoker;
+import org.adligo.i.adig.shared.BaseGInvoker;
+import org.adligo.i.adig.shared.I_GInvoker;
 
 /**
  * ignores input parameter

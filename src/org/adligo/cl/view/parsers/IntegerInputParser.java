@@ -2,9 +2,9 @@ package org.adligo.cl.view.parsers;
 
 import org.adligo.cl.CL_InvokerNames;
 import org.adligo.cl.view.I_InputParser;
-import org.adligo.i.adi.client.InvokerNames;
-import org.adligo.i.adig.client.GRegistry;
-import org.adligo.i.adig.client.I_GInvoker;
+import org.adligo.i.adi.shared.InvokerNames;
+import org.adligo.i.adig.shared.GRegistry;
+import org.adligo.i.adig.shared.I_GInvoker;
 
 public class IntegerInputParser implements I_InputParser {
 	private static I_GInvoker<String, Object> SYSTEM_OUT = GRegistry.getInvoker(
