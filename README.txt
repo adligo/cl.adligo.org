@@ -21,5 +21,3 @@ it also establishes some conventions;
    		someFiles.jar
    	conf
    		program_name_default_or_example_configuration.xml
-   		
-   		
